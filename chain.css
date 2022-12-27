@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background:white;
+    padding:0;
+    background-image: url('images/bg1.jpg');
+ 
+    background-size: cover;
+    
+}
+.navbar{
+    background:blue;
+    padding:1em;
+    color:white;
+    min-height: 30px;
+}
+
+
+
+
+.logo{
+    text-decoration: none;
+    font-weight:bold;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+.container{
+    display:flex;
+    place-content:space-between;
+}
+.mobile-menu{
+    cursor:pointer;
+     color: white;
+
+}
+a{
+    color:white;
+    font-size:20px;
+}
+.ex-am{
+    width:300px;
+    font-weight:bold;
+    font-size:60px;
+    font-family:'Times New Roman';
+    color: white;
+
+}
+.span-menu{
+    color:rgb(240, 240, 6);
+}
+nav{
+    display:none;
+    position:fixed;
+    z-index:999;
+    width:66%;
+    right:0;
+    top:0;
+    background:#20272E;
+    height:100vh;
+    padding: 1em;
+}
+.menu-btn{
+    display:block;
+
+}
+.nav-bar{
+    font-size:24px;
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+    font-weight:bold;
+}
+.primary-ctp{
+    background:  #007AF3;;
+    color:white;
+    text-decoration:none;
+    padding:.6em 1.3em;
+    font-size:1.4em;
+    border-radius:5em;
+    font-weight:bold;
+    display:inline-block;
+}
+@media only screen and (min-width:768px){
+    .mobile-menu{
+        display:none;
+        background-size:cover;
+        background-image: contain;
+    }
+    .navbar .container{
+        display:grid;
+        grid-template-columns: 180px auto ;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav a{
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
+    }
+}
+
